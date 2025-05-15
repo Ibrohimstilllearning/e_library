@@ -10,21 +10,22 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="bg-blue-600 p-4 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-white text-2xl font-bold">E-Library</a>
-            <ul class="flex space-x-6 text-white">
+    <nav class="bg-transparent p-10 items-center">
+        <div class="container mx-auto flex justify-between items-center bg-gradient-to-r from-fuchsia-500 to-blue-700 p-4 rounded-full">
+           
+                <a href="/" class="text-white text-2xl font-extrabold items-center ml-5 flex">E-Library</a>
+            <ul class="flex space-x-6 text-white font-bold">
                 <li><a href="/" class="hover:underline">Home</a></li>
                 <li><a href="/books" class="hover:underline">Books</a></li>
                 <li><a href="/store" class="hover:underline">Store</a></li>
                 <li><a href="/contact" class="hover:underline">Contact</a></li>
             </ul>
-            <div>
+            <div class=" mr-4">
                 @auth
                     <a href="/dashboard" class="text-white px-4 py-2 bg-green-500 rounded">Dashboard</a>
                 @else
-                    <a href="/login" class="text-white px-4 py-2 bg-gray-700 rounded">Login</a>
-                    <a href="/register" class="text-white px-4 py-2 bg-yellow-500 rounded">Register</a>
+                    <a href="/login" class="text-white px-4 py-2 bg-gray-700 rounded hover:to-blue-600 transition ease-in-out duration-300">Login</a>
+                    <a href="/register" class="text-white px-4 py-2 bg-blue-500 rounded">Register</a>
                 @endauth
             </div>
         </div>
@@ -32,7 +33,7 @@
 
     {{-- isi halaman store --}}
     <div class="container mx-auto px-6 py-12">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Lokasi Toko Perpustakaan</h1>
+        <h1 class="text-7xl font-extrabold text-center bg-gradient-to-r from-fuchsia-600 to-blue-500 text-transparent bg-clip-text ">Lokasi Toko Perpustakaan</h1>
         <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white shadow-lg rounded-lg p-6">
             <h2 class="text-xl font-semibold text-gray-700">Perpustakaan Solo</h2>

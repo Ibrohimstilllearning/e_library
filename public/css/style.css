@@ -1,5 +1,9 @@
+
+
+
+
 .banner{
-    background-image: url('/storage/image/banner-elibrary.jpg');
+    background-image: url('/storage/image/buku.jpg');
     background-size: cover; /* Agar gambar menyesuaikan ukuran elemen */
     background-position: center; /* Pusatkan gambar */
     background-repeat: no-repeat; /* Hindari pengulangan gambar */
